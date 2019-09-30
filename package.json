@@ -1,0 +1,21 @@
+{
+  "name": "jsfiddle-forge-backend",
+  "version": "0.0.0",
+  "description": "Simple Autodesk Forge application providing authentication and sample data for jsfiddle snippets.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "autodesk",
+    "forge",
+    "viewer",
+    "snippet"
+  ],
+  "author": "Petr Broz <petr.broz@autodesk.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "forge-server-utils": "^6.2.0"
+  }
+}

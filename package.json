@@ -15,6 +15,7 @@
   "author": "Petr Broz <petr.broz@autodesk.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "forge-server-utils": "^6.2.0"
   }

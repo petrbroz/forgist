@@ -14,7 +14,7 @@ let app = express();
 let authenticationClient = new AuthenticationClient(FORGE_CLIENT_ID, FORGE_CLIENT_SECRET);
 let dataManagementClient = new DataManagementClient({ client_id: FORGE_CLIENT_ID, client_secret: FORGE_CLIENT_SECRET });
 
-app.use(cors({ origin: CORS_ALLOW_ORIGIN }));
+app.use(cors({ origin: CORS_ALLOW_ORIGIN.split(',') }));
 app.get('/api/token', async function(req, res) {
     try {
         const token = await authenticationClient.authenticate(['viewables:read']);

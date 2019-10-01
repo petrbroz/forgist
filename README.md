@@ -1,10 +1,11 @@
-# jsfiddle-forge-backend
+# forgist
 
-Simple [Autodesk Forge](https://forge.autodesk.com) application
-providing authentication and sample data for [jsfiddle](https://jsfiddle.net) snippets.
+[Autodesk Forge](https://forge.autodesk.com) application
+providing authentication and sample data for various code snippet websites
+such as [jsfiddle](https://jsfiddle.net) or [codepen](https://codepen.io).
 
 > If you're interested in seeing additional APIs and models other than those listed below,
-> submit a [feature request](https://github.com/petrbroz/jsfiddle-forge-backend/issues/new).
+> submit a [feature request](https://github.com/petrbroz/forgist/issues/new).
 
 ## Endpoints
 
@@ -14,7 +15,7 @@ Returns a 2-legged OAuth token with `viewables:read` scope.
 
 #### Request
 
-`GET https://jsfiddle-forge-backend.herokuapp.com/api/token`
+`GET https://forgist.herokuapp.com/api/token`
 
 #### Response
 
@@ -31,7 +32,7 @@ Returns a collection of sample models ready for viewing.
 
 #### Request
 
-`GET https://jsfiddle-forge-backend.herokuapp.com/api/models`
+`GET https://forgist.herokuapp.com/api/models`
 
 #### Response
 

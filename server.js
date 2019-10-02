@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const cors = require('cors');
 const { AuthenticationClient, DataManagementClient, urnify } = require('forge-server-utils');
@@ -36,4 +37,5 @@ app.get('/api/models', async function(req, res) {
         res.status(500).send(err);
     }
 });
+app.use('/client', express.static(path.join(__dirname, 'client')));
 app.listen(port, () => console.log(`Server listening on port ${port}...`));

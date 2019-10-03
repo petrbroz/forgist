@@ -1,7 +1,7 @@
 {
   "name": "forgist",
   "version": "0.0.1",
-  "description": "Autodesk Forge application providing authentication and sample data for various code snippet websites.",
+  "description": "Autodesk Forge application providing authentication, sample data, and client side utilities for various code snippet websites.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

@@ -1,7 +1,7 @@
 # forgist
 
-[Autodesk Forge](https://forge.autodesk.com) application
-providing authentication and sample data for various code snippet websites
+[Autodesk Forge](https://forge.autodesk.com) application providing authentication,
+sample data, and client side utilities for various code snippet websites
 such as [jsfiddle](https://jsfiddle.net) or [codepen](https://codepen.io).
 
 > If you're interested in seeing additional APIs and models other than those listed below,
@@ -52,6 +52,26 @@ Returns a collection of sample models ready for viewing.
     }
 ]
 ```
+
+## Client Utilities
+
+When writing a code snippet, you would typically initialize the viewer and load models
+using the official [Forge Viewer APIs](https://forge.autodesk.com/en/docs/viewer/v7/reference).
+In cases where you don't want to set things up manually, consider using the utility script
+https://forgist.herokuapp.com/client/utils.js. It adds a `forgist` object into the global scope
+with several helper functions, for example, a `setup` function which automatically initializes
+the viewer in provided HTML element, and loads one of the predefined models either by its name or index:
+
+```js
+forgist.setup(document.getElementById('viewer'), 2).then(viewer => {
+  const dbids = viewer.getSelection();
+  console.log(dbids);
+});
+```
+
+Oh, and here's a quick link to [Create New Codepen](https://codepen.io/pen?template=yLBdWmm) with this snippet.
+
+> See code comments in https://forgist.herokuapp.com/client/utils.js for more details and usage examples.
 
 ## Models
 

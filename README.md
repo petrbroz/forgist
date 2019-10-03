@@ -7,6 +7,8 @@ such as [jsfiddle](https://jsfiddle.net) or [codepen](https://codepen.io).
 > If you're interested in seeing additional APIs and models other than those listed below,
 > submit a [feature request](https://github.com/petrbroz/forgist/issues/new).
 
+![codepen screenshot](docs/screenshot.png)
+
 ## Endpoints
 
 ### GET /api/token

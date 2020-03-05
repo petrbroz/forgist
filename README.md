@@ -17,7 +17,7 @@ Returns a 2-legged OAuth token with `viewables:read` scope.
 
 #### Request
 
-`GET https://forgist.herokuapp.com/api/token`
+`GET https://forgist.autodesk.io/api/token`
 
 #### Response
 
@@ -34,7 +34,7 @@ Returns a collection of sample models ready for viewing.
 
 #### Request
 
-`GET https://forgist.herokuapp.com/api/models`
+`GET https://forgist.autodesk.io/api/models`
 
 #### Response
 
@@ -60,7 +60,7 @@ Returns a collection of sample models ready for viewing.
 When writing a code snippet, you would typically initialize the viewer and load models
 using the official [Forge Viewer APIs](https://forge.autodesk.com/en/docs/viewer/v7/reference).
 In cases where you don't want to set things up manually, consider using the utility script
-https://forgist.herokuapp.com/client/utils.js. It adds a `forgist` object into the global scope
+https://forgist.autodesk.io/client/utils.js. It adds a `forgist` object into the global scope
 with several helper functions, for example, a `setup` function which automatically initializes
 the viewer in provided HTML element, and loads one of the predefined models either by its name or index:
 
@@ -73,7 +73,7 @@ forgist.setup(document.getElementById('viewer'), 2).then(viewer => {
 
 Oh, and here's a quick link to [Create New Codepen](https://codepen.io/pen?template=yLBdWmm) with this snippet.
 
-> See code comments in https://forgist.herokuapp.com/client/utils.js for more details and usage examples.
+> See code comments in https://forgist.autodesk.io/client/utils.js for more details and usage examples.
 
 ## Models
 

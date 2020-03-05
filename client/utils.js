@@ -1,5 +1,5 @@
 const forgist = {
-    BackendUrl: 'https://forgist.herokuapp.com'
+    BackendUrl: 'https://forgist.autodesk.io'
 };
 
 /**

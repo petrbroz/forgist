@@ -9,6 +9,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/forge-viewer@^7.55.1":
+  version "7.55.1"
+  resolved "https://registry.yarnpkg.com/@types/forge-viewer/-/forge-viewer-7.55.1.tgz#948028d28362fdc32e14da4888d6df3e03512a27"
+  integrity sha512-XilJk+TRf4BNITJZEReidffuwwu1RjNDIrwMQ9UTiLBqIgJ/V/CwDXT27+lBhZh9qf0O3smY8ShlzX5ukZoEAg==
+
 "@types/fs-extra@^8.0.0":
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-8.0.0.tgz#d3e2c313ca29f95059f198dd60d1f774642d4b25"

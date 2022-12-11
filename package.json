@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "forge-server-utils": "^6.2.0"
   },
   "devDependencies": {
